@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://menu.gd" type="Script" id=1]
+[ext_resource path="res://pong.tscn" type="PackedScene" id=2]
+
+[node name="menunode" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 242.0
+margin/top = 130.0
+margin/right = 387.0
+margin/bottom = 188.0
+text = "Pong le Ping
+By Andries"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 241.0
+margin/top = 236.0
+margin/right = 386.0
+margin/bottom = 294.0
+text = "press enter to start"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="pongnode" parent="." instance=ExtResource( 2 )]
+
+visibility/visible = false
+
+
